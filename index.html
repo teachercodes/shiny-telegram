@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Une enquête interactive pour réviser les animaux, la famille et les adjectifs possessifs en français.">
+  <title>Mission Animaux — L’enquête</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="vendor/pdf-lib.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="header">
+    <a href="#home" class="brand" aria-label="Mission Animaux, accueil"><span class="brand-icon" aria-hidden="true"></span><span>mission<span class="brand-light">animaux</span><small>LE BUREAU DES PETITES ENQUÊTES</small></span></a>
+    <nav aria-label="Navigation principale"><button data-nav="home">Le jeu</button><button data-nav="family">La famille</button><button data-nav="memo">Le mémo</button><button data-nav="report">Mon dossier <span class="nav-dot" aria-hidden="true"></span></button></nav>
+    <span class="course">FRANÇAIS <span>IGCSE</span></span>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="footer"><span>Un peu de français. Beaucoup de caractère.</span><button data-nav="teacher">Espace enseignant</button></footer>
+  <dialog id="memo-dialog" aria-labelledby="memo-title"><div id="memo-content"></div></dialog>
+  <script src="config.js" defer></script>
+</body>
+</html>
